@@ -1,7 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     max-width: 1024px;
     margin: 0 auto;
 }
+
+/* 반응형 구현 도전 */
+
+/* 3개 */
+@media screen and (max-width: 768px){
+    .card_section ul { 
+        display: flex;
+        flex-direction: coliumn;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+    .card_section li {
+        width: 30%;
+    }
+
+}
+
+/* 2개 */
+@media screen and (max-width: 480px){
+    .card_section ul { 
+        display: flex;
+        flex-direction: coliumn;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+    .card_section li {
+        width: 48%;
+    }
+
+    .card_footer{
+        width: 100%;
+    }
+}
+
+/* 1개 */
+@media screen and (max-width: 320px){
+    .card_section ul { 
+        display: flex;
+        flex-direction: coliumn;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+    .card_section li {
+        width: 80%;
+    }
+}
+    
+
 
 /* 헤더 임돠 */
 header {
@@ -81,13 +145,22 @@ li {
     border-width: 3px;
     border-style: solid; 
     border-color: #000000;
+    box-shadow: rgb(134, 134, 134) 0px 5px 5px;
+
+}
+
+li:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transform: translate(0px, -15px);
 }
 
 /*사진 크기 조절*/
 
 .card_photo{
-    width: 230px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -167,3 +240,4 @@ li {
     padding-left: 5px;
     margin: 10px 0;
 } */
+
