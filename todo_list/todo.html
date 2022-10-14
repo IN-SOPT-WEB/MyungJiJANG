@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gaegu&family=Jua&family=Nanum+Pen+Script&family=Stylish&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/06176f9978.js" crossorigin="anonymous"></script>
+    <link rel="short icon" href="#">
 </head>
 <body>
 <!-- 헤더 -->
@@ -29,13 +30,16 @@
             <div class ="today_todo">
                 <div class="today_title"> 오늘 할 일</div>
                 <ul id = "today_task_board">
-                    <li><div id='result'></div></li>
+                    <li class="list_items">
+                        <span>아오 너무 어렵다</span>
+                        <button class="deleteBtn"> X </button>
+                    </li> 
                 </ul>
             </div>
             
             <form class="todo_form">
                 <input type="text" size="30" id="left_text_input" placeholder="Enter your todo" autocomplete="off" />
-                <input type="button" value="+" id="left_add_button"/>
+                <button type="button" id="left_add_button">+</button>
                 <!-- <i class="fa-solid fa-circle-plus"></i> -->
             </form>  
         </section>
@@ -57,7 +61,7 @@
             
             <form class="todo_form">
                 <input type="text" size="30" id="right_text_input" placeholder="Enter your todo" autocomplete="off" />
-                <input type="button" value="+" id="right_add_button" />
+                <button type="button" value="+" id="right_add_button">+</button>
                 <!-- <i class="fa-solid fa-circle-plus"></i> -->
             </form>  
         </section>
