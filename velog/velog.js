@@ -1,43 +1,20 @@
-const selectBoxElements = document.querySelectorAll(".select");
+const selectList = document.querySelector('.drop-down');
+const selectedValue = document.querySelector('.selected-value');
+const selectOption = selectList.querySelectorAll('.option');
 
-function toggleSelectBox(selectBox) {
-  selectBox.classList.toggle("active");
+[...selectOption].forEach(option => { option.addEventListener('click', selectCheck) })
+
+function selectCheck(event) { 
+  [...selectOption].forEach(option => { option.classList.remove('selected-text') })
+  event.target.classList.add('selected-text');
+  selectedValue.innerText = event.target.innerText;
 }
 
-function selectOption(optionElement) {
-  const selectBox = optionElement.closest(".select");
-  const selectedElement = selectBox.querySelector(".selected-value");
-  selectedElement.textContent = optionElement.textContent;
+function dropDownCheck() { 
+  selectList.style.display = selectList.style.display === 'none' ? 'block' : 'none';
 }
 
-selectBoxElements.forEach(selectBoxElement => {
-  selectBoxElement.addEventListener("click", function (e) {
-    const targetElement = e.target;
-    const isOptionElement = targetElement.classList.contains("option");
-
-    if (isOptionElement) {
-      selectOption(targetElement);
-    }
-
-    toggleSelectBox(selectBoxElement);
-  });
-});
-
-document.addEventListener("click", function (e) {
-  const targetElement = e.target;
-  const isSelect = targetElement.classList.contains("select") || targetElement.closest(".select");
-
-  if (isSelect) {
-    return;
-  }
-
-  const allSelectBoxElements = document.querySelectorAll(".select");
-
-  allSelectBoxElements.forEach(boxElement => {
-    boxElement.classList.remove("active");
-  });
-});
-
-
+const dropDown = document.querySelector('.selected');
+dropDown.addEventListener('click', dropDownCheck);
 
 

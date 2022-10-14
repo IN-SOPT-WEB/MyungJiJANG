@@ -337,11 +337,11 @@ html, body {
     outline: transparent;
 }
 
-#tag-list {
+.tag-list {
     margin: 20px 0;
 }
 
-#tag-list > .tag {
+.tag-list > .tag {
     display: inline-block;
     padding: 5px 20px;
     border: 3px solid transparent;
@@ -350,4 +350,12 @@ html, body {
     color: #151515;
     background-color: #ffe137;
     cursor: pointer;
+}
+
+.selected-text {
+    color: #ffe137;
+}
+
+.drop-down{
+    display: none;
 }
