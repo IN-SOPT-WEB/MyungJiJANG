@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gaegu&family=Jua&family=Nanum+Pen+Script&family=Stylish&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/06176f9978.js" crossorigin="anonymous"></script>
-    <script src="src/week2.js" defer></script>
 </head>
 <body>
 <!-- 헤더 -->
@@ -18,39 +17,25 @@
 
 <!-- 네비게이션 바 -->
     <nav>
-        <button class="nav_button" type="button">오늘만 보기</button>
-        <button class="nav_button" type="button">내일만 보기</button>
-        <button class="nav_button" type="button">함께 보기</button>
+        <button class="nav_button" id="now" type="button">오늘만 보기</button>
+        <button class="nav_button" id="next" type="button">내일만 보기</button>
+        <button class="nav_button" id="all" type="button">함께 보기</button>
     </nav>
 
 
 <!-- 리스트 -->
     <main class="main">
         <section class ="section_left">
-            <div class="today_todo">
+            <div class ="today_todo">
                 <div class="today_title"> 오늘 할 일</div>
-                <ul id="todo_list">
-                    <li>
-                        <input type="checkbox" id="todo-1" />
-                        <label for="todo-1">멋지게 밥먹기</label>
-                        <button type ="button" class="clearBtn"><i class="fa-solid fa-trash"></i></button>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="todo-2" />
-                        <label for="todo-2">신나게 잠자기</label>
-                        <button type ="button" class="clearBtn"><i class="fa-solid fa-trash"></i></button>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="todo-3" />
-                        <label for="todo-3">코브라 생산하기</label>
-                        <button type ="button" class="clearBtn"><i class="fa-solid fa-trash"></i></button>
-                    </li>
-                 </ul>
+                <ul id = "today_task_board">
+                    <li><div id='result'></div></li>
+                </ul>
             </div>
             
             <form class="todo_form">
-                <input type="text" size="30" class="input" />
-                <input type="submit" value="+"/>
+                <input type="text" size="30" id="left_text_input" placeholder="Enter your todo" autocomplete="off" />
+                <input type="button" value="+" id="left_add_button"/>
                 <!-- <i class="fa-solid fa-circle-plus"></i> -->
             </form>  
         </section>
@@ -58,30 +43,21 @@
         <div class = "V_line"></div>
             
         <section class ="section_right">
-            <div class="next_todo">
-                <div class="next_title"> 내일 할 일</div>
-                <ul class="todo_list">
-                    <li>
-                        <input type="checkbox" id="todo-1" />
-                        <label for="todo-1">신명나게 춤추기</label>
-                        <button type ="button" class="clearBtn"><i class="fa-solid fa-trash"></i></button>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="todo-2" />
-                        <label for="todo-2">장봉지랑 산책하기</label>
-                        <button type ="button" class="clearBtn"><i class="fa-solid fa-trash"></i></button>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="todo-3" />
-                        <label for="todo-3">가만히 있기</label>
-                        <button type ="button" class="clearBtn"><i class="fa-solid fa-trash"></i></button>
-                    </li>
-                 </ul>
+            <div class="tomorrow_todo">
+                <div class="tomorrow_title"> 내일 할 일</div>
+                <ul id = "tomorrow_task_board">
+                    <li class="list_items">
+                        <span>아오 너무 어렵다</span>
+                        <button class="deleteBtn"> X </button>
+                    </li>      
+                </ul>
+                </div>
             </div>
+
             
             <form class="todo_form">
-                <input type="text" size="30" class="input" />
-                <input type="submit" value="+"/>
+                <input type="text" size="30" id="right_text_input" placeholder="Enter your todo" autocomplete="off" />
+                <input type="button" value="+" id="right_add_button" />
                 <!-- <i class="fa-solid fa-circle-plus"></i> -->
             </form>  
         </section>
@@ -93,6 +69,6 @@
     <footer class="footer">
         <p>IN SOPT WEB31</p>
     </footer>
-
+    <script src="./week2.js"></script>
 </body>
 </html>
