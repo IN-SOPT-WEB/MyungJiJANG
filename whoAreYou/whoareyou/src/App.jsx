@@ -5,8 +5,6 @@ import GlobalStyle from "./components/Globalstyle";
 
 import Header from "./components/Header";
 import Quiz from "./components/Main";
-import Replay from "./components/Replay";
-
 
 function App() {
 
@@ -15,7 +13,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <Quiz /> 
+      <Quiz />
     </>
   );
 } 
