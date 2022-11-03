@@ -32,11 +32,11 @@ const modalClose = document.querySelector(".modal_close");
 modalOpen.addEventListener("click", () => {
   modal.style.display = "block";
   modal.classList.toggle("show");
-  body.classList.toggle("scroll-lock");
+  document.body.style.overflow = 'hidden';
 });
 
 modalClose.addEventListener("click", () => {
   modal.style.display = "none";
-  body.style.overflow = 'auto';
+  document.body.style.overflow = 'auto';
 
 });

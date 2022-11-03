@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.hidden{
+    overflow: hidden;
+}
+
 body {
   max-width: 1024px;
   margin: 0 auto;
