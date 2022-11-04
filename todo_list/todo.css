@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(212, 192, 174);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/*헤더*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Alkalami', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color:  rgb(65, 57, 52);
+}
+
+/*네비게이션+네비게이션 버튼*/
+nav{
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: black solid 1px;
+    padding: 20px;
+}
+
+.nav_button {
+    cursor: pointer;
+    background-color: rgb(245, 244, 239);
+    border: 3px solid rgb(86, 68, 55);
+    border-radius: 30px;
+    font-family: 'Jua', sans-serif;
+}
+
+.nav_button:hover{
+    background-color: rgb(86, 68, 55);
+    color: rgb(245, 244, 239);
+}
+
+/*할 일 리스트*/
+.main{
+    display: flex;
+    height: calc(100vh - 10rem);
+}
+
+.main > .section_left{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.today_title{
+    margin: 15px;
+    padding-left: 11px;
+    border: 3px solid rgb(86, 68, 55);
+    border-radius: 10px;
+    background-color: rgb(245, 244, 239);
+    font-family: 'Stylish', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:  rgb(65, 57, 52);
+}
+
+.list_items {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    font-family: 'Nanum Pen Script', cursive;
+}
+    
+.main > .section_right{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 20px;
+    border-left: 1px solid;
+}
+
+.todo_form {
+    margin: 10px;
+}
+
+.tomorrow_title{
+    margin: 15px;
+    padding-left: 11px;
+    border: 3px solid rgb(86, 68, 55);
+    border-radius: 10px;
+    background-color: rgb(245, 244, 239);
+    font-family: 'Stylish', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:  rgb(65, 57, 52);
+}
+
+button{
+    border-bottom: black solid 1px;
+    border-radius: 30px;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(229, 5, 5);
+}
+
+.footer{
+    margin: 10 0 10 0;
+    background-color: rgb(86, 68, 55);
+    color: rgb(174, 159, 146);
+    text-align: center;
+}
+
+
+/*js done 일때 delete하기 */
