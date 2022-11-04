@@ -6,6 +6,7 @@ import GlobalStyle from "./components/Globalstyle";
 import Header from "./components/Header";
 import Quiz from "./components/Main";
 
+
 function App() {
 
 

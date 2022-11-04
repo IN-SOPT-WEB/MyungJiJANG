@@ -5,21 +5,31 @@ import { quizList } from "../constants/quizList";
 import Score from "./Score";
 import Replay from "./Replay";
 import styled from "styled-components";
+import Modal from "./Modal";
+import ModalPortal from "../Portal";
+import { useEffect } from "react";
 
 function Main() {
   const [score, setScore] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [modalOn, setModalOn] = useState(false);
+  const [content, setContent] = useState("");
+  const handleModal = () => {
+    setModalOn(false);
+  };
 
   function checkAnswers(e) {
+    setModalOn(true);
     if (e.target.innerText === quizList[currentIndex].answer) {
       setScore(score + 1);
+      setContent("정답입니다!");
       if (score === 5) {
-        alert("축하합니다. 6문제 모두 맞추셨습니다!");
+        setContent("축하합니다. 6문제 모두 맞추셨습니다!");
       } else {
         setCurrentIndex(currentIndex + 1);
       }
     } else {
-      alert("쌍둥인줄 알았는데 아니네요! 다시 선택해주세요!");
+      setContent("쌍둥인줄 알았는데 아니네요! 다시 선택해주세요!");
     }
   }
 
@@ -27,9 +37,15 @@ function Main() {
     setScore(0);
     setCurrentIndex(0);
   }
+  useEffect(() => {
+    console.log(modalOn);
+  }, [modalOn]);
   return (
     <div>
       <Score score={score} />
+      <ModalPortal>
+        {modalOn && <Modal onClose={handleModal} content={content} />}
+      </ModalPortal>
 
       {score <= 5 ? (
         <div>
