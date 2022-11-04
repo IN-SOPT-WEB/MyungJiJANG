@@ -22,7 +22,7 @@ function Main() {
     setModalOn(true);
     if (e.target.innerText === quizList[currentIndex].answer) {
       setScore(score + 1);
-      setContent("정답입니다!");
+      setContent("오또케 알아찌?? 정답입니다!!");
       if (score === 5) {
         setContent("축하합니다. 6문제 모두 맞추셨습니다!");
       } else {

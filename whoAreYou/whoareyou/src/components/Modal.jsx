@@ -7,9 +7,8 @@ const Modal = ({ onClose, content }) => {
   return (
     <Background>
       <Content>
-        <ModalText>
-          {content}
-        </ModalText>
+        <closeBtn onClick={onClose}>X</closeBtn>
+        <ModalText>{content}</ModalText>
       </Content>
     </Background>
   );
@@ -35,10 +34,16 @@ const Content = styled.div`
   margin-top: 70px;
   position: relative;
   background-color: white;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   box-shadow: 0 5px 16px black;
 `;
 
 const ModalText = styled.p`
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+`;
+
+const closeBtn = styled.button`
+  margin-left: 50px;
 `;
