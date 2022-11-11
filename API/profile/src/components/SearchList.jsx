@@ -11,6 +11,7 @@ import axios from "axios";
 function SearchList() {
   const location = useLocation();
   const navigate = useNavigate();
+
   const [searchItems, setSearchItems] = React.useState(); // searchItem에 props로 넘겨줄 데이터를 저장할 state
   const [loading, setLoading] = React.useState(true); // 로딩 상태를 저장할 state
   const handleOnClick = () => {

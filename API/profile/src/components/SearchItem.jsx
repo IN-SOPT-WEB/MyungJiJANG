@@ -5,6 +5,7 @@ import styled from "styled-components";
 const SearchItem = ({ SearchItems }) => {
   const { avatarUrl, login, name, followers, following, bio, url } =
     SearchItems;
+ 
   return (
     <div className="Header">
       <Avatar src={avatarUrl} alt="thumbnail" />
@@ -35,6 +36,7 @@ const Avatar = styled.img`
   padding: 5px;
   margin: 20px 20px 0 20px;
 `;
+
 const UserId = styled.h2`
   font-size: 20px;
   font-weight: bold;
