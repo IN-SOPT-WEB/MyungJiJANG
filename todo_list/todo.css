@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(212, 192, 174);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#today, #tomorrow {
+    background-color: rgb(245, 244, 239);
+    border: 3px solid rgb(86, 68, 55);
+    border-radius: 30px;
+    font-family: 'Jua', sans-serif;
+}
+
+#togather{
+    background-color: rgb(86, 68, 55);
+    border: 3px solid  rgb(245, 244, 239);
+    border-radius: 30px;
+    color:  rgb(245, 244, 239);
+    font-family: 'Jua', sans-serif;
+}
+
+header{
+    background-color: rgb(245, 244, 239);
+    color: rgb(86, 68, 55);
+    text-align: center;
+    font-family: 'Alkalami', serif;
+}
+
+.header_title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.today_do{
+    background-color: rgb(245, 231, 216);
+    border-radius: 30px;
+    width: 125px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Stylish', sans-serif;
+    color:  rgb(110, 98, 90);
+
+}
+
+.will_do{
+    background-color: rgb(245, 231, 216);
+    border-radius: 30px;
+    width: 125px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Stylish', sans-serif;
+    color:  rgb(110, 98, 90);
+}
+
+#todo-list{
+    background-color: rgb(245, 231, 216);
+    border-radius: 5px;
+}
+
+#done-list{
+    background-color: rgb(245, 231, 216);
+    border-radius: 5px;
+    padding-right: 20px;
+}
+
+.list_all {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* 가운데  가로선 만들기 css */
+.H_line{
+    border-top: 1px solid #000;
+    margin-top: 30px;
+}
+
+/* 가운데 세로 선 만들기*/
+.V_line{
+    border-left: 1px solid #000;
+    height: 475px;
+    position: absolute;
+}
+
+.footer{
+    background-color: rgb(203, 184, 168);
+    color: rgb(174, 159, 146);;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    font-size: 0.9rem;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+hr {
+    color: rgb(86, 68, 55);
+    border: dashed 0.3px;
+}
+
+#todo_input{
+    background-color: rgb(245, 231, 216);
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+    font-size: 1rem;
+    font-family: 'Nanum Pen Script', cursive;
+}
