@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css" />
+    <title>Todo_list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gaegu&family=Jua&family=Nanum+Pen+Script&family=Stylish&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06176f9978.js" crossorigin="anonymous"></script>
+    <link rel="short icon" href="#">
+</head>
+<body>
+<!-- 헤더 -->
+    <header> To-do List </header>
+
+<!-- 네비게이션 바 -->
+    <nav>
+        <button class="nav_button" id="now" type="button">오늘만 보기</button>
+        <button class="nav_button" id="next" type="button">내일만 보기</button>
+        <button class="nav_button" id="all" type="button">함께 보기</button>
+    </nav>
+
+
+<!-- 리스트 -->
+    <main class="main">
+        <section class ="section_left">
+            <div class ="today_todo">
+                <div class="today_title"> 오늘 할 일</div>
+                <ul id = "today_task_board">
+                    <li class="list_items">
+                        <span>아오 너무 어렵다</span>
+                        <button class="deleteBtn"> X </button>
+                    </li> 
+                </ul>
+            </div>
+            
+            <form class="todo_form">
+                <input type="text" size="30" id="left_text_input" placeholder="Enter your todo" autocomplete="off" />
+                <button type="button" id="left_add_button">+</button>
+                <!-- <i class="fa-solid fa-circle-plus"></i> -->
+            </form>  
+        </section>
+
+        <div class = "V_line"></div>
+            
+        <section class ="section_right">
+            <div class="tomorrow_todo">
+                <div class="tomorrow_title"> 내일 할 일</div>
+                <ul id = "tomorrow_task_board">
+                    <li class="list_items">
+                        <span>아오 너무 어렵다</span>
+                        <button class="deleteBtn"> X </button>
+                    </li>      
+                </ul>
+                </div>
+            </div>
+
+            
+            <form class="todo_form">
+                <input type="text" size="30" id="right_text_input" placeholder="Enter your todo" autocomplete="off" />
+                <button type="button" value="+" id="right_add_button">+</button>
+                <!-- <i class="fa-solid fa-circle-plus"></i> -->
+            </form>  
+        </section>
+    </main>
+
+
+
+<!-- 푸터 -->
+    <footer class="footer">
+        <p>IN SOPT WEB31</p>
+    </footer>
+    <script src="./week2.js"></script>
+</body>
+</html>
