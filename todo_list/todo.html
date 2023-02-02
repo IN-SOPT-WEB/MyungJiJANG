@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css" />
+    <title>Todo_list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gaegu&family=Jua&family=Nanum+Pen+Script&family=Stylish&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06176f9978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- 헤더 -->
+    <header>
+        <span class="header_title">To-do List</span> <br>
+        <span class="sub_title">Plan your day. It's gonna be a great day</span>
+    </header>
+
+<!-- 네비게이션 바 -->
+    <nav>
+        <button id="today">오늘만 보기</button>
+        <button id="tomorrow">내일만 보기</button>
+        <button id="togather">함께 보기</button>
+    </nav>
+
+    <div class = "H_line"></div>
+
+<!-- 리스트 -->
+    <main>
+        <div class="list_all">
+            <left-section>
+                <span class="today_do">오늘 할 일</span>
+                <ul id="todo-list">
+                    <li>
+                        <input type="checkbox" id="todo-1" />
+                        <label for="todo-1">멋지게 밥먹기</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="todo-2" />
+                        <label for="todo-2">신나게 잠자기</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="todo-3" />
+                        <label for="todo-3">코브라 생산하기</label>
+                    </li>
+                </ul>
+                
+        <!-- 공백을 만들고 싶어서 노가다를 했는데.. 이게 아닌걸 알지만 대체 어케하는 거에용...? -->           
+                <div class="blank1">&nbsp</div>
+                <div class="blank2">&nbsp</div>
+                <div class="blank3">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+
+                <input type="text" id="todo_input" placeholder="할 일을 입력하세요" />
+                <i class="fa-solid fa-circle-plus"></i>
+            </left-section>
+
+            <div class = "V_line"></div>
+            
+            <right-section>
+                <span class="will_do">내일 할 일</span>
+                <ul id="done-list">
+                    <li>
+                        <input type="checkbox" id="done-1" checked />
+                        <label for="done-1">신명나게 춤추기</label>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                        <i class="fa-solid fa-trash-can"></i>
+                    </li>
+                    <hr>
+                    <li>
+                        <input type="checkbox" id="done-2" checked />
+                        <label for="done-2">나비야 열창하기</label>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                        <i class="fa-solid fa-trash-can"></i>
+                    </li>
+                </ul>
+
+        <!-- 공백을 만들고 싶어서 노가다를 했는데.. 이게 아닌걸 알지만 대체 어케하는 거에용...? -->
+                <div class="blank1">&nbsp</div>
+                <div class="blank2">&nbsp</div>
+                <div class="blank3">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+                <div class="blank4">&nbsp</div>
+
+
+                <input type="text" id="todo_input" placeholder="할 일을 입력하세요" />
+                <i class="fa-solid fa-circle-plus"></i>
+            </right-section>
+        </div>
+    </main>
+
+
+
+<!-- 푸터 -->
+    <footer class="footer">
+        <p>IN SOPT WEB31</p>
+    </footer>
+
+</body>
+</html>
