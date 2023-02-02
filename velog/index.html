@@ -13,27 +13,34 @@
 </head>
 <body>
     <header>
-        <div class = "header__logo">
-            <p>Bonglog</p>
-        </div>
+        <p class="header__logo">Bonglog</p>
 
         <div class="head_icons">
-            <h5>
-                <i class="fa-solid fa-sun"></i>&nbsp&nbsp
-                <i class="fa-solid fa-magnifying-glass"></i>&nbsp&nbsp
-                <span class="log_in">로그인</span>
-            </h5>
+            <div class = "h_icons">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="write.html"><button class ="write_text">새 글 작성</button></a>
+                <button class ="log_in" type ="button">로그인</button>
+            </div>
         </div>
     </header>
 
     <nav>
         <div class="left_items">
-            <h4>
-                <span class="tranding"><i class="fa-solid fa-arrow-trend-up"></i>&nbsp트렌딩</span>
-                &nbsp&nbsp&nbsp<span class="new"><i class="fa-regular fa-clock"></i>&nbsp최신</span>
-                &nbsp&nbsp<span class="weekly">이번 주<i class="fa-solid fa-caret-down"></i></span>
-            </h4>
-        </div>
+                <span class="tranding"><i class="fa-solid fa-arrow-trend-up"></i>트렌딩</span>
+                <span class="new"><i class="fa-regular fa-clock"></i>최신</span>
+                <div class="select">
+                    <div class="selected">
+                      <div class="selected-value">====</div>
+                    </div>
+                    <ul class="drop-down">
+                      <li class="option">오늘</li>
+                      <li class="option">이번 주</li>
+                      <li class="option">이번 달</li>
+                      <li class="option">이번 년</li>
+                    </ul>
+                  </div>
+            </div>
         
         <div class="right_icon">
             <h3>
@@ -43,8 +50,8 @@
     </nav>
     
     <div class ="card_section">
-        <ul>
-            <li>
+        <ul class = "Card_list">
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/1.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -62,7 +69,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/3.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -80,7 +87,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/2.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -98,7 +105,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/4.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -116,7 +123,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/5.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -134,7 +141,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/6.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -152,7 +159,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/7.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -170,7 +177,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/8.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -188,7 +195,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/9.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -206,7 +213,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/10.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -224,7 +231,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/11.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -242,7 +249,7 @@
                 </div>
             </li>
 
-            <li>
+            <li class="Card_list_detail">
                 <div class="card_1">
                     <div class="card_photo"><img src="velog_img/12.jpg" alt="bongji"></div>
                     <div class="card_info">
@@ -261,9 +268,18 @@
             </li>
             
             
+            
 
             
         </div>
 
+        <div class="modal">
+            <div class="modal_body">
+                <div></div>
+                <button class="modal_close">X</button>
+            </div>
+        </div>
+        
+        <script src="./velog.js"></script>
 </body>
 </html>
